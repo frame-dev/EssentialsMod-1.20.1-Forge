@@ -1,0 +1,56 @@
+{
+  "latest": "1.0.9",
+  "download-file": "essentials-Mc1.18.2-v",
+  "versions": [
+    "1.0.4",
+    "1.0.5",
+    "1.0.6",
+    "1.0.7",
+    "1.0.8",
+    "1.0.9"
+  ],
+  "versionDescriptions": [
+    {
+      "version": "1.0.4",
+      "description": [
+        "Initial version, featuring basic features."
+      ]
+    },
+    {
+      "version": "1.0.5",
+      "description": []
+    },
+    {
+      "version": "1.0.6",
+      "description": [
+        "Added more features and bug fixes."
+      ]
+    },
+    {
+      "version": "1.0.7",
+      "description": [
+        "Fixed a bug related to the new feature.",
+        "Maintenance command added",
+        "Backpack bug fix added",
+        "Backpack configuration to save only as Map added",
+        "Fly speed added",
+        "Vanish silent join and leave added"
+      ]
+    },
+    {
+      "version": "1.0.8",
+      "description": [
+        "Better Command registration",
+        "Various bug fixes",
+        "Features added"
+      ]
+    },
+    {
+      "version": "1.0.9",
+      "description": [
+        "Bug fixes for registering commands",
+        "Commands updated"
+      ]
+    }
+  ]
+}

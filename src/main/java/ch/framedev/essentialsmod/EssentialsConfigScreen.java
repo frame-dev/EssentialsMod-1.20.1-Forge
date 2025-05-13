@@ -59,7 +59,7 @@ public class EssentialsConfigScreen extends Screen {
         });
         currentY += spacing;
 
-        addToggleButton(centerX, currentY, "Enable Mute Other Player for Themselves", EssentialsConfig.muteOtherPlayerForSelf::get, EssentialsConfig.muteOtherPlayerForSelf::set);
+        addToggleButton(centerX, currentY, "Enable Mute Other Player for Themselves", EssentialsConfig.muteOtherPlayerForSelf, EssentialsConfig.muteOtherPlayerForSelf::set);
         currentY += spacing;
         addToggleButton(centerX, currentY, "Enable Backpack", EssentialsConfig.enableBackPack::get, EssentialsConfig.enableBackPack::set);
         currentY += spacing;

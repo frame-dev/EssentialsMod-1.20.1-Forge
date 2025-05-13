@@ -2,6 +2,7 @@ package ch.framedev.essentialsmod.commands;
 
 import ch.framedev.essentialsmod.EssentialsMod;
 import ch.framedev.essentialsmod.utils.ChatUtils;
+import ch.framedev.essentialsmod.utils.EssentialsConfig;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
@@ -33,6 +34,7 @@ public class MuteOtherPlayerCommand implements ICommand {
     }
 
     private int execute(CommandContext<CommandSourceStack> context) {
+        if(!EssentialsConfig.muteOtherPlayerForSelf.get()) return 0;
         if (!(context.getSource().getEntity() instanceof ServerPlayer player)) {
             context.getSource().sendFailure(Component.literal("Only players can use this command!")
                     .withStyle(style -> style.withColor(ChatFormatting.RED)));
@@ -73,6 +75,7 @@ public class MuteOtherPlayerCommand implements ICommand {
 
         @SubscribeEvent
         public static void onPlayerChat(ServerChatEvent event) {
+            if(!EssentialsConfig.muteOtherPlayerForSelf.get()) return;
             ServerPlayer sender = event.getPlayer();
             String senderName = sender.getName().getString();
             MinecraftServer server = sender.getServer();

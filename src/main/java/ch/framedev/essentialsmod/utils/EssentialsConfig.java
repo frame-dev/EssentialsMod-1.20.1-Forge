@@ -22,7 +22,6 @@ public class EssentialsConfig {
     public static final ForgeConfigSpec.BooleanValue enableSigns;
     public static final ForgeConfigSpec.BooleanValue silentJoinLeave;
     public static final ForgeConfigSpec.ConfigValue<String> configSelection;
-
     static {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 

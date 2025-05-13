@@ -167,8 +167,8 @@ This command adds the player to the allowed List to join the server in maintenan
 ## Build by yourself
 
 ``` bash
-git clone https://github.com/frame-dev/EssentialsMod-Mc1.18.2-Forge.git
-cd EssentialsMod-Mc1.18.2-Forge
+git clone https://github.com/frame-dev/EssentialsMod-1.20.1-Forge.git
+cd EssentialsMod-1.20.1-Forge
 ./gradlew jar
 ```
 
@@ -176,7 +176,7 @@ The Jar is located in the build/libs directory.
 
 ## Installation
 
-1. Download the **Essentials Mod (1.18.2)** JAR file [Latest Version Download](https://github.com/frame-dev/EssentialsMod-Mc1.18.2-Forge/releases/latest).
+1. Download the **Essentials Mod (1.20.1)** JAR file [Latest Version Download](https://github.com/frame-dev/EssentialsMod-Mc1.18.2-Forge/releases/latest).
 2. Place the JAR file in the `mods` folder of your Minecraft installation directory.
 3. Start Minecraft with Forge installed.
 

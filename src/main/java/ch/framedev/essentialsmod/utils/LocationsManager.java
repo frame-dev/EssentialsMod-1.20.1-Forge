@@ -70,7 +70,7 @@ public class LocationsManager {
             config.getConfig().save();
         } else {
             Map<String, Map<String, Object>> warps = TomlUtils.INSTANCE.getWarps();
-            if (warps == null) warps = new HashMap<>(); // Ensure warps is initialized
+            if (warps == null) warps = new HashMap<>(); // Ensure warps are initialized
 
             Map<String, Object> locationData = new HashMap<>();
             locationData.put("dimension", location.getDimension());
@@ -114,7 +114,6 @@ public class LocationsManager {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public static boolean existsHome(@NotNull String playerName, String home) {
         if (useConfigForHome) {
             if (EssentialsConfig.configSelection.get().equalsIgnoreCase("yaml")) {
@@ -133,7 +132,6 @@ public class LocationsManager {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public static void setHome(@NotNull String playerName, @NotNull Location location, String home) {
         if (useConfigForHome) {
             if (EssentialsConfig.configSelection.get().equalsIgnoreCase("yaml")) {

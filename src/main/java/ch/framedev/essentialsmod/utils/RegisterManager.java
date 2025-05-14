@@ -55,6 +55,10 @@ public class RegisterManager {
             commandSet.add(new SetWarpCommand());
         }
 
+        if(EssentialsConfig.muteOtherPlayerForSelf.get()) {
+            commandSet.add(new MuteOtherPlayerCommand());
+        }
+
 
         commandSet.forEach(command -> event.getDispatcher().register(command.register()));
 
@@ -99,7 +103,6 @@ public class RegisterManager {
                         new InvseeCommand(),
                         new EnderChestCommand(),
                         new GodCommand(),
-                        new MuteOtherPlayerCommand(),
                         new VanishCommand(),
                         new AdminSwordCommand(),
                         new NewGameModeCommand(),

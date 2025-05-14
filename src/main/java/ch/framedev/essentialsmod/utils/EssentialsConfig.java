@@ -45,7 +45,7 @@ public class EssentialsConfig {
 
         muteOtherPlayerForSelf = builder
                 .comment("Enable or disable the feature that allows players to mute other players for themselves.")
-                        .define("muteOtherPlayerForSelf", true);
+                        .define("muteOtherPlayerForSelf", false);
 
         enableBackPack = builder
                 .comment("Enable or disable the Backpack Command")
